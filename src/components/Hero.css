@@ -1,0 +1,63 @@
+.hero {
+  padding: 8rem clamp(1.5rem, 4vw, 5rem) 5rem;
+  display: grid;
+  gap: 2rem;
+  background: radial-gradient(circle at top, #f7e9d9, #f5f3ef 45%);
+}
+
+/* nav styles moved to NavBar */
+
+.hero__content {
+  max-width: 720px;
+  display: grid;
+  gap: 1rem;
+}
+
+.hero__eyebrow {
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8c775b;
+}
+
+.hero__intro {
+  font-size: 1.1rem;
+  color: #4d4a44;
+  line-height: 1.6;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero__photo-placeholder {
+  height: 280px;
+  border-radius: 1.5rem;
+  background: repeating-linear-gradient(
+      45deg,
+      rgba(146, 114, 79, 0.12),
+      rgba(146, 114, 79, 0.12) 20px,
+      rgba(146, 114, 79, 0.3) 20px,
+      rgba(146, 114, 79, 0.3) 40px
+    ),
+    #d7c4aa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: #5c4a35;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding-top: 3rem;
+  }
+
+  .hero__content h1 {
+    font-size: 2rem;
+  }
+}
+

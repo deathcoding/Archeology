@@ -1,0 +1,36 @@
+.team {
+  background: #f0ebe4;
+}
+
+.team__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.team__card {
+  background: #fff;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  display: grid;
+  gap: 0.5rem;
+  box-shadow: 0 1rem 2rem rgba(23, 12, 4, 0.08);
+}
+
+.team__avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #1f1209;
+  color: #f5f3ef;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.team__role {
+  font-weight: 500;
+  color: #6a5b48;
+}
+
