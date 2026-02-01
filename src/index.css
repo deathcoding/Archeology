@@ -21,3 +21,86 @@ img {
   max-width: 100%;
   display: block;
 }
+
+/* Layout & shared (from App) */
+.page {
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: #111;
+  background: #f5f3ef;
+  min-height: 100vh;
+}
+
+.page main {
+  display: grid;
+  gap: 2.5rem;
+  padding-top: 80px;
+  scroll-margin-top: 80px;
+}
+
+@media (min-width: 961px) {
+  .page main {
+    padding-top: 140px;
+    scroll-margin-top: 140px;
+  }
+}
+
+.section {
+  padding: 4rem clamp(1.5rem, 4vw, 5rem);
+  display: grid;
+  gap: 2rem;
+  scroll-margin-top: 100px;
+}
+
+@media (min-width: 961px) {
+  .section {
+    scroll-margin-top: 160px;
+  }
+}
+
+.section__header {
+  max-width: 720px;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.eyebrow {
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8c775b;
+}
+
+.button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.85rem 1.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  text-decoration: none;
+}
+
+.button--primary {
+  background: #1f1209;
+  color: #f9f4ec;
+  box-shadow: 0 0.75rem 1.5rem rgba(23, 14, 6, 0.25);
+}
+
+.button--ghost {
+  background: transparent;
+  border: 1px solid #7c6750;
+  color: #7c6750;
+}
+
+.button:focus-visible {
+  outline: 2px solid #a67c52;
+  outline-offset: 2px;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}

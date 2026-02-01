@@ -1,0 +1,26 @@
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.list__item {
+  background: #fff;
+  padding: 1.25rem 1.5rem;
+  border-radius: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 500;
+  box-shadow: 0 1rem 2rem rgba(17, 17, 17, 0.08);
+}
+
+.list__bullet {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #a67c52;
+  flex-shrink: 0;
+}

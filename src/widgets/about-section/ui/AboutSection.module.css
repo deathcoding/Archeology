@@ -1,0 +1,40 @@
+.about {
+  background: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 1.5rem 3rem rgba(17, 17, 17, 0.08);
+  display: flex;
+  justify-content: center;
+}
+
+.about__stats {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.about__stats li {
+  background: #f5f3ef;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.95rem;
+  color: #6a5b48;
+}
+
+.about__stats span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f1209;
+}
+
+.section__paragraph {
+
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #4d4a44;
+}

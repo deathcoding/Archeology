@@ -1,0 +1,12 @@
+export const navItems = [
+  { id: "about", label: "О нас" },
+  { id: "team", label: "Сотрудники" },
+  { id: "works", label: "Работы" },
+  { id: "documents", label: "Документы" },
+  { id: "faq", label: "Вопрос-ответ" },
+  { id: "expertise", label: "Проведение экспертизы" },
+  { id: "application", label: "Подача заявки" },
+  { id: "awards", label: "Награды и благодарности" },
+  { id: "requisites", label: "Реквизиты" },
+  { id: "contacts", label: "Контакты" },
+] as const;

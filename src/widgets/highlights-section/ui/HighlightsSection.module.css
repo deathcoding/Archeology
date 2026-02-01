@@ -1,0 +1,19 @@
+.sectionGrid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  padding: 2rem;
+  background: #fff;
+  border-radius: 1.25rem;
+  box-shadow: 0 1.5rem 3rem rgba(26, 20, 9, 0.07);
+  display: grid;
+  gap: 0.75rem;
+}
+
+.cardAccent {
+  background: linear-gradient(135deg, #1f1209, #4c311d);
+  color: #f9f4ec;
+  box-shadow: 0 2rem 3rem rgba(23, 14, 6, 0.35);
+}

@@ -1,0 +1,141 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  min-height: 64px;
+  padding: 0.75rem clamp(1rem, 4vw, 2rem);
+  background: rgba(245, 243, 239, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.08);
+  box-shadow: 0 0.5rem 1.5rem rgba(17, 17, 17, 0.08);
+}
+
+.navbarBrand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.navbarLogo {
+  font-weight: 700;
+  font-size: clamp(0.75rem, 2.5vw, 1.1rem);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.navbarLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.navbarLinks a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0.35rem 0.25rem;
+  border-radius: 999px;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.navbarLinks a:hover,
+.navbarLinks a:focus-visible {
+  background: rgba(166, 124, 82, 0.12);
+  color: #a67c52;
+  outline: none;
+}
+
+.navbarToggle {
+  display: none;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.35rem;
+  border: 1px solid rgba(17, 17, 17, 0.15);
+  border-radius: 0.5rem;
+  background: transparent;
+  cursor: pointer;
+}
+
+.navbarToggle span {
+  width: 24px;
+  height: 2px;
+  background: #1f1209;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.navbarToggleActive span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.navbarToggleActive span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbarToggleActive span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+@media (max-width: 960px) {
+  .navbar {
+    min-height: 56px;
+    padding: 0.5rem clamp(1rem, 4vw, 1.5rem);
+  }
+
+  .navbarBrand {
+    flex: 0 1 auto;
+    max-width: calc(100% - 52px);
+  }
+
+  .navbarToggle {
+    display: flex;
+    flex-shrink: 0;
+    order: 2;
+  }
+
+  .navbarLinks {
+    width: 100%;
+    order: 3;
+    flex-direction: column;
+    display: none;
+    padding: 0.5rem 0 0;
+    gap: 0.25rem;
+  }
+
+  .navbarLinksOpen {
+    display: flex;
+  }
+
+  .navbarLinks a {
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+.logo {
+  flex-shrink: 0;
+  width: 100px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.logo img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
