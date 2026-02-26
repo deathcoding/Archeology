@@ -2,28 +2,40 @@ import styles from "./TeamSection.module.css";
 
 const teamMembers = [
   {
-    name: "Михаил",
+    name: "Чаплыгин Михаил Сергеевич",
     role: "Директор",
-    email: "msch1979@gmail.com",
-    phone: "8-987-489-50-95"
+    organization: "БГПУ им. М. Акмуллы",
+    details: "Историк"
   },
   {
     name: "Шамсутдинов Марсель Расилевич",
     role: "Заместитель директора",
-    email: "shamsutdinov.m@yandex.ru",
-    phone: "8-987-489-50-95"
+    organization: "БГУ",
+    details: "Историк"
   },
   {
-    name: "Имя сотрудника",
-    role: "Должность",
-    email: "shamsutdinov.m@yandex.ru",
-    phone: "8-987-489-50-95"
+    name: "Надолько Дмитрий Владимирович",
+    role: "Научный сотрудник",
+    organization: "БГПУ им. Акмуллы",
+    details: "Историк"
   },
   {
-    name: "Имя сотрудника",
-    role: "Должность",
-    email: "shamsutdinov.m@yandex.ru",
-    phone: "8-987-489-50-95"
+    name: "Максимов Арсений Евгеньевич",
+    role: "Научный сотрудник",
+    organization: "БГПУ им. Акмуллы",
+    details: "Историк"
+  },
+  {
+    name: "Кутуев Александр Сергеевич",
+    role: "Научный сотрудник",
+    organization: "БГУ",
+    details: "Историк, аспирант"
+  },
+  {
+    name: "Морозов Александр Иванович",
+    role: "Научный сотрудник",
+    organization: "УУНиТ",
+    details: "Историк, магистрант"
   },
 ];
 
@@ -47,8 +59,7 @@ export function TeamSection() {
             </div>
             <h3>{member.name}</h3>
             <p className={styles.team__role}>{member.role}</p>
-            <p>{member.email}</p>
-            <p>{member.phone}</p>
+            <p>{member.organization}, {member.details}</p>
           </article>
         ))}
       </div>

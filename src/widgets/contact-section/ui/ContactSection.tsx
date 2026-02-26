@@ -2,9 +2,11 @@ import styles from "./ContactSection.module.css";
 import { useContactForm } from "@/shared/hooks/useContactForm";
 
 const contactInfo = [
-  { label: "Телефон", value: "8-917-3483-124" },
+  { label: "Телефон", value: "+7(917)94-83-124" },
   { label: "Электронная почта", value: "msch1979@gmail.com" },
-  { label: "Адрес офиса", value: "г. Уфа, ул. Коммунистическая, д. 116" },
+  { label: "Электронная почта", value: "shamsutdinov.m@yandex.ru" },
+  { label: "Телефон", value: "+7(987)48-95-095" },
+  { label: "Юридический адрес", value: "Республика Башкортостан, г. Уфа, ул. Карайская 17" },
 ];
 
 export function ContactSection() {
@@ -23,8 +25,8 @@ export function ContactSection() {
       <div className={styles.contacts__grid}>
         <div className={styles.contacts__info}>
           <ul>
-            {contactInfo.map((item) => (
-              <li key={item.label}>
+            {contactInfo.map((item, index) => (
+              <li key={index}>
                 <span>{item.label}</span>
                 <p>{item.value}</p>
               </li>

@@ -1,11 +1,5 @@
 import styles from "./AboutSection.module.css";
 
-const stats = [
-  { label: "Лицензия Минкультуры", value: "№ 77-ОРГ-2025" },
-  { label: "Проектов ежегодно", value: "60+" },
-  { label: "Регионов присутствия", value: "18" },
-  { label: "Полевых отрядов", value: "5" },
-];
 
 export function AboutSection() {
   return (
@@ -27,14 +21,6 @@ export function AboutSection() {
           федеральных округов.
         </p>
       </div>
-      <ul className={styles.about__stats}>
-          {stats.map((item) => (
-            <li key={item.label}>
-              <span>{item.value}</span>
-              {item.label}
-            </li>
-          ))}
-        </ul>
     </section>
   );
 }
