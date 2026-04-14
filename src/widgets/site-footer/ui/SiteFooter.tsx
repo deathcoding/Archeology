@@ -2,7 +2,7 @@ import styles from "./SiteFooter.module.css";
 
 export function SiteFooter() {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} id="contacts">
       <div>
         <div className={styles.footerLogo}>ООО «АрхеоВектор»</div>
         <p>

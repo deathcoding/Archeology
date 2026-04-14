@@ -95,17 +95,17 @@
 }
 
 .contacts__submit {
-  background: #f9f4ec !important;
-  color: #1f1209 !important;
-  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.2), 0 0 0 2px rgba(249, 244, 236, 0.4);
+  background: #1f4ea8 !important;
+  color: #fff !important;
+  box-shadow: 0 0.25rem 1rem rgba(31, 78, 168, 0.3), 0 0 0 2px rgba(255, 255, 255, 0.22);
   padding: 1rem 2rem;
   font-size: 1rem;
 }
 
 .contacts__submit:hover:not(:disabled) {
-  background: #f5f0e6 !important;
+  background: #275ec6 !important;
   transform: translateY(-2px);
-  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.25), 0 0 0 2px rgba(249, 244, 236, 0.5);
+  box-shadow: 0 0.5rem 1.25rem rgba(31, 78, 168, 0.35), 0 0 0 2px rgba(255, 255, 255, 0.3);
 }
 
 .contacts__submit:focus-visible {

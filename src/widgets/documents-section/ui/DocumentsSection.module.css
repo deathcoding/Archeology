@@ -1,5 +1,5 @@
 .documents {
-  background: #fff;
+  background: var(--widget-bg);
   border-radius: 2rem
 }
 
@@ -14,7 +14,7 @@
 }
 
 .documents__list li {
-  background: #f5f3ef;
+  background: var(--widget-bg-soft);
   border-radius: 1rem;
   padding: 1rem 1.25rem;
   box-shadow: inset 0 0 0 1px rgba(17, 17, 17, 0.05);

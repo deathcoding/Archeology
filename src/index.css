@@ -1,5 +1,8 @@
 :root {
   color-scheme: light;
+  --site-bg: #d9d9d9;
+  --widget-bg: #fcfcfb;
+  --widget-bg-soft: #ffffff;
 }
 
 html {
@@ -16,7 +19,8 @@ html {
 
 body {
   margin: 0;
-  background: #f5f3ef;
+  background: var(--site-bg);
+  color: #000;
   overflow-x: hidden;
   max-width: 100%;
 }
@@ -29,25 +33,39 @@ img {
 /* Layout & shared (from App) */
 .page {
   font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
-  color: #111;
-  background: #f5f3ef;
+  color: #000;
+  background: var(--site-bg);
   min-height: 100vh;
   max-width: 100%;
   overflow-x: hidden;
 }
 
+.page h1,
+.page h2 {
+  color: #1f4ea8;
+}
+
+.page p,
+.page li,
+.page dd,
+.page dt,
+.page label,
+.page a {
+  color: #000;
+}
+
 .page main {
   display: grid;
   gap: 2.5rem;
-  padding-top: 80px;
-  scroll-margin-top: 80px;
+  padding-top: 2.5rem;
+  scroll-margin-top: 0;
   min-width: 0;
 }
 
 @media (min-width: 961px) {
   .page main {
-    padding-top: 140px;
-    scroll-margin-top: 140px;
+    padding-top: 2.5rem;
+    scroll-margin-top: 0;
   }
 }
 
@@ -55,13 +73,13 @@ img {
   padding: 4rem clamp(1.5rem, 4vw, 5rem);
   display: grid;
   gap: 2rem;
-  scroll-margin-top: 100px;
+  scroll-margin-top: 1.5rem;
   min-width: 0;
 }
 
 @media (min-width: 961px) {
   .section {
-    scroll-margin-top: 160px;
+    scroll-margin-top: 1.5rem;
   }
 }
 
@@ -75,7 +93,7 @@ img {
   font-size: 0.85rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #8c775b;
+  color: #000;
 }
 
 .button {
@@ -93,19 +111,19 @@ img {
 }
 
 .button--primary {
-  background: #1f1209;
-  color: #f9f4ec;
-  box-shadow: 0 0.75rem 1.5rem rgba(23, 14, 6, 0.25);
+  background: #1f4ea8;
+  color: #fff;
+  box-shadow: 0 0.75rem 1.5rem rgba(31, 78, 168, 0.28);
 }
 
 .button--ghost {
-  background: transparent;
-  border: 1px solid #7c6750;
-  color: #7c6750;
+  background: rgba(31, 78, 168, 0.08);
+  border: 1px solid #1f4ea8;
+  color: #1f4ea8;
 }
 
 .button:focus-visible {
-  outline: 2px solid #a67c52;
+  outline: 2px solid #1f4ea8;
   outline-offset: 2px;
 }
 

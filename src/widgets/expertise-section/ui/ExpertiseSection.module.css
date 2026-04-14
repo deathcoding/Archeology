@@ -1,5 +1,5 @@
 .expertise {
-  background: #fff;
+  background: var(--widget-bg);
   border-radius: 2rem
 }
 
@@ -14,7 +14,7 @@
 .expertise__steps li {
   border-radius: 1.25rem;
   padding: 1.5rem;
-  background: #f5f3ef;
+  background: var(--widget-bg-soft);
   box-shadow: inset 0 0 0 1px rgba(17, 17, 17, 0.06);
   display: grid;
   gap: 0.5rem;

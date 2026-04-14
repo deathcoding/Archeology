@@ -1,5 +1,5 @@
 .team {
-  background: #f0ebe4;
+  background: var(--widget-bg);
   border-radius: 2rem
 }
 
@@ -22,7 +22,7 @@
 }
 
 .team__card {
-  background: #fff;
+  background: var(--widget-bg-soft);
   border-radius: 1.5rem;
   padding: 1.5rem;
   display: grid;

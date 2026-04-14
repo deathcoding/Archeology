@@ -2,7 +2,7 @@
   padding: 2rem clamp(1.5rem, 4vw, 5rem) 5rem;
   display: grid;
   gap: 2rem;
-  background: #fff;
+  background: var(--widget-bg);
   border-radius: 2rem;
 }
 
@@ -38,7 +38,7 @@
   font-size: 0.85rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #8c775b;
+  color: #000;
   min-width: 0;
 }
 
@@ -60,7 +60,7 @@
   flex-shrink: 0;
   align-self: center;
   margin-left: auto;
-  max-width: min(220px, 100%);
+  max-width: min(420px, 100%);
 }
 
 .heroLogo img {

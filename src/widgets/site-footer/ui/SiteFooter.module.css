@@ -1,20 +1,25 @@
 .footer {
+  max-width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
   padding: 3rem clamp(1.5rem, 4vw, 5rem) 4rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 1.5rem;
-  border-top: 1px solid rgba(17, 17, 17, 0.1);
-  background: #f5efe6;
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  border-radius: 2rem;
+  box-shadow: 0 1.5rem 3rem rgba(17, 17, 17, 0.08);
+  background: var(--widget-bg);
 }
 
 .footerLogo {
   font-weight: 600;
-  color: #1f1209;
+  color: #1f4ea8;
 }
 
 .footer__contacts {
   display: grid;
   gap: 0.35rem;
-  color: #4d4a44;
+  color: #000;
 }

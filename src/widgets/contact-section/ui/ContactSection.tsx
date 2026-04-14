@@ -6,7 +6,10 @@ const contactInfo = [
   { label: "Электронная почта", value: "msch1979@gmail.com" },
   { label: "Электронная почта", value: "shamsutdinov.m@yandex.ru" },
   { label: "Телефон", value: "+7(987)48-95-095" },
-  { label: "Юридический адрес", value: "Республика Башкортостан, г. Уфа, ул. Карайская 17" },
+  {
+    label: "Юридический адрес",
+    value: "Республика Башкортостан, г. Уфа, ул. Карайская 17",
+  },
 ];
 
 export function ContactSection() {
@@ -19,7 +22,8 @@ export function ContactSection() {
         <p className="eyebrow">Контакты</p>
         <h2>Свяжитесь с нашей командой</h2>
         <p>
-          Ответим на запрос в кратчайшие сроки и предложим удобный формат взаимодействия.
+          Ответим на запрос в кратчайшие сроки и предложим удобный формат
+          взаимодействия.
         </p>
       </div>
       <div className={styles.contacts__grid}>
@@ -76,12 +80,13 @@ export function ContactSection() {
               {isSubmitting ? "Отправляем..." : "Отправить"}
             </button>
             {status && (
-              <p className={`${styles.contacts__status} ${status === "success" ? styles.contacts__statusSuccess : styles.contacts__statusError}`}>
+              <p
+                className={`${styles.contacts__status} ${status === "success" ? styles.contacts__statusSuccess : styles.contacts__statusError}`}
+              >
                 {message}
               </p>
             )}
           </form>
-
         </div>
       </div>
     </section>

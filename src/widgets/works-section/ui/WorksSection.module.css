@@ -1,7 +1,8 @@
 .works {
-  background: #1b140d;
-  color: #f9f4ec;
-  border-radius: 2rem
+  background: var(--widget-bg);
+  color: #000;
+  border-radius: 2rem;
+  box-shadow: 0 1.5rem 3rem rgba(17, 17, 17, 0.08);
 }
 
 .works__grid {
@@ -13,18 +14,22 @@
 .workCard {
   border-radius: 1.5rem;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--widget-bg-soft);
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  box-shadow: 0 0.75rem 1.5rem rgba(17, 17, 17, 0.06);
   display: grid;
 }
 
 .workCard__media {
   min-height: 160px;
-  background: rgba(255, 255, 255, 0.15);
+  background: linear-gradient(180deg, rgba(31, 78, 168, 0.08), rgba(31, 78, 168, 0.02));
+  border-bottom: 1px solid rgba(17, 17, 17, 0.08);
   display: grid;
   place-items: center;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   font-size: 0.8rem;
+  color: #1f4ea8;
 }
 
 .workCard__body {
@@ -34,5 +39,5 @@
 }
 
 .workCard__body p {
-  color: #e3d4c1;
+  color: #000;
 }

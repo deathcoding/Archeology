@@ -1,6 +1,6 @@
 .application {
-  background: #1f1209;
-  color: #f9f4ec;
+  background: var(--widget-bg);
+  color: #4d4a44;
   border-radius: 2rem
 }
 

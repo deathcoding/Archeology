@@ -2,12 +2,12 @@ import { Container } from "@/shared/ui/Container";
 import {
   AboutSection,
   ApplicationSection,
-  ContactSection,
   DocumentsSection,
   ExpertiseSection,
   FaqSection,
   Hero,
   NavBar,
+  ReviewsSection,
   RequisitesSection,
   SiteFooter,
   TeamSection,
@@ -24,12 +24,13 @@ export function LandingPage() {
           <AboutSection />
           <TeamSection />
           <WorksSection />
+          <ReviewsSection />
           <DocumentsSection />
           <FaqSection />
           <ExpertiseSection />
           <ApplicationSection />
           <RequisitesSection />
-          <ContactSection />
+          {/* <ContactSection /> */}
         </main>
         <SiteFooter />
       </Container>

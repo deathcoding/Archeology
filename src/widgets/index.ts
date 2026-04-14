@@ -8,6 +8,7 @@ export { Hero } from "./hero/ui/Hero";
 export { HighlightsSection } from "./highlights-section/ui/HighlightsSection";
 export { NavBar } from "./nav-bar/ui/NavBar";
 export { ProjectsSection } from "./projects-section/ui/ProjectsSection";
+export { ReviewsSection } from "./reviews-section/ui/ReviewsSection";
 export { RequisitesSection } from "./requisites-section/ui/RequisitesSection";
 export { ServicesSection } from "./services-section/ui/ServicesSection";
 export { SiteFooter } from "./site-footer/ui/SiteFooter";

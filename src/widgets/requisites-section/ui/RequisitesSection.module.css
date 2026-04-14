@@ -1,5 +1,5 @@
 .requisites {
-  background: #f0ebe4;
+  background: var(--widget-bg);
   border-radius: 2rem;
 }
 
@@ -12,7 +12,7 @@
 }
 
 .requisites__list div {
-  background: #fff;
+  background: var(--widget-bg-soft);
   border-radius: 1rem;
   padding: 1rem 1.25rem;
   box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.05);
