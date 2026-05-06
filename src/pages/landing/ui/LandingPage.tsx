@@ -12,6 +12,7 @@ import {
   SiteFooter,
   TeamSection,
   WorksSection,
+  ContactSection,
 } from "@/widgets";
 
 export function LandingPage() {
@@ -22,9 +23,9 @@ export function LandingPage() {
         <main>
           <Hero />
           <AboutSection />
-          <TeamSection />
-          <WorksSection />
-          <ReviewsSection />
+          {/* <TeamSection /> */}
+          {/* <WorksSection /> */}
+          {/* <ReviewsSection /> */}
           <DocumentsSection />
           <FaqSection />
           <ExpertiseSection />

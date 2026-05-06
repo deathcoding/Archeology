@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Logo from "@/shared/assets/images/Logo.png";
-import { navItems } from "@/shared/data/nav";
+import { navItems } from "@/widgets/nav-bar/data/nav";
 import styles from "./NavBar.module.css";
 
 export function NavBar() {
