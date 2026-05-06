@@ -7,12 +7,12 @@ import {
   FaqSection,
   Hero,
   NavBar,
-  ReviewsSection,
-  RequisitesSection,
-  SiteFooter,
-  TeamSection,
-  WorksSection,
-  ContactSection,
+  // ReviewsSection,
+  // RequisitesSection,
+  // SiteFooter,
+  // TeamSection,
+  // WorksSection,
+  // ContactSection,
 } from "@/widgets";
 
 export function LandingPage() {
