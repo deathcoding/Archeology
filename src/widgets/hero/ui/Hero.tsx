@@ -11,7 +11,7 @@ const heroServices = [
 
 export function Hero() {
   return (
-    <div className={styles.hero}>
+    <div className={styles.hero} id="">
       <div className={styles.hero__row}>
         <div className={styles.hero__content}>
           <h1>ООО «АрхеоВектор»</h1>

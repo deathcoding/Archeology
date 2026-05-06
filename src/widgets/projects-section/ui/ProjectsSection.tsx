@@ -1,5 +1,5 @@
 import styles from "./ProjectsSection.module.css";
-import type { Expedition } from "@/model/landing";
+import type { Expedition } from "@/widgets/projects-section/model/expedition";
 
 type ProjectsSectionProps = {
   expeditions: Expedition[];

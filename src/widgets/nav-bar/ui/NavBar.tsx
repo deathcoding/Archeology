@@ -6,8 +6,6 @@ import styles from "./NavBar.module.css";
 export function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleLinkClick = () => setIsMenuOpen(false);
-
   return (
     <header className={styles.navbar}>
       <div className={styles.navbarInner}>
@@ -30,7 +28,7 @@ export function NavBar() {
           className={isMenuOpen ? `${styles.navbarLinks} ${styles.navbarLinksOpen}` : styles.navbarLinks}
         >
           {navItems.map((item) => (
-            <a key={item.id} href={`#${item.id}`} onClick={handleLinkClick}>
+            <a key={item.id} href={`#${item.id}`}>
               {item.label}
             </a>
           ))}

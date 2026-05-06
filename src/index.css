@@ -111,14 +111,22 @@ img {
 }
 
 .button--primary {
-  background: #1f4ea8;
   color: #fff;
+  background: #1f4ea8;
   box-shadow: 0 0.75rem 1.5rem rgba(31, 78, 168, 0.28);
+}
+
+.page a.button--primary {
+  color: #fff;
 }
 
 .button--ghost {
   background: rgba(31, 78, 168, 0.08);
   border: 1px solid #1f4ea8;
+  color: #1f4ea8;
+}
+
+.page a.button--ghost {
   color: #1f4ea8;
 }
 
